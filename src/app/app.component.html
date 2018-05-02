@@ -1,0 +1,13 @@
+<div class="container">
+	<div class="jumbotron">
+	<h4>{{ title }}</h4>
+	</div>
+	<div class="well">
+		<ul class="list-group">
+			<app-message *ngFor="let obj of post"  [blogMessage]="obj.title" [blogContent]="obj.content" [blogCreated]="obj.created_at" [blogLove]="obj.loveIts">
+			
+			</app-message>
+		</ul>
+	</div>
+	
+</div>
